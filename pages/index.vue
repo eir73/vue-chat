@@ -41,6 +41,9 @@
 <script>
   export default {
     layout: 'empty',
+    head: {
+      title: 'Welcome to chat',
+    },
     sockets: {
       connect() {
         console.log("client io connected");
@@ -60,7 +63,16 @@
     }),
     methods: {
       submit () {
-        this.$refs.form.validate()
+        if (this.$refs.form.validate()) { 
+          const user = {
+            name: this.name,
+            room: this.room,
+          }
+
+          this.$store.commit('setUser', user)
+
+          this.$router.push('/chat')
+        }
       },
     },
   }
