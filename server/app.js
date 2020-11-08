@@ -16,10 +16,10 @@ io.on('connection', socket => {
     socket.join(data.room)
 
     callback({userId: socket.id})
-    socket.emit('newMessage', message('admin', `Welcome, ${data.name}.`))
+    socket.emit('newMessage', message('impossibleUserName', `Welcome, ${data.name}.`))
     socket.broadcast
       .to(data.room)
-      .emit('newMessage', message('admin', `User ${data.name} has joined.`))
+      .emit('newMessage', message('impossibleUserName', `User ${data.name} has joined.`))
   })
 
   socket.on('createMessage', data => {

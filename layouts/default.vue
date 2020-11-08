@@ -1,6 +1,6 @@
 <template>
   <v-app app dark>
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer app v-model="drawer" mobile-breakpoint="567">
       <v-list subheader>
         <v-subheader>Recent chat</v-subheader>
         <v-list-tile v-for="user in users" :key="user.id" @click.prevent>
@@ -24,7 +24,7 @@
     </v-toolbar>
 
     <v-content>
-      <div>
+      <div class="layout__content">
         <nuxt />
       </div>
     </v-content>
@@ -53,3 +53,9 @@ export default {
   },
 };
 </script>
+
+<style>
+  .layout__content {
+    height: 100%;
+  }
+</style>
