@@ -2,8 +2,9 @@
   <v-text-field
     label="Solo"
     placeholder="Enter your message"
-    @keydown.enter="send"
     solo
+    @keydown.enter="send"
+    v-model="text"
   ></v-text-field>
 </template>
 

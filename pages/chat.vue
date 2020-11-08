@@ -6,7 +6,7 @@
         :key="message.text"
         :name="message.name"
         :text="message.text"
-        owner
+        :owner="message.id === user.id"
       />
     </div>
     <div class="chat__form">
@@ -29,7 +29,8 @@ export default {
   },
   computed: mapState(["user", "messages"]),
   components: {
-    Message
+    Message,
+    ChatForm,
   }
 };
 </script>

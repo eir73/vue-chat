@@ -8,8 +8,9 @@
       <div class="message__body" :class="{ owner }">
         <small>
           <strong>{{ name }}</strong>
+          <strong>{{(new Date()).toLocaleTimeString()}}</strong>
         </small>
-        <p>text</p>
+        <p>{{text}}</p>
       </div>
     </div>
   </div>
@@ -46,12 +47,18 @@ export default {
   &__body {
     position: relative;
     max-width: 60%;
+    width: 0px;
     min-width: 30%;
     padding: 1rem;
     margin: 0 1rem 1rem;
-    box-shadow: 0 1 0 0 rgba(50, 50, 50, 0.3);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
     border-radius: 4px;
     background-color: #1976d2;
+
+    small {
+      display: flex;
+      justify-content: space-between; 
+    }
 
     p {
       margin-bottom: 0;
