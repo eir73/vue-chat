@@ -10,12 +10,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "1cad7c9684ddd99061188c906e2e8e80"
   },
   {
-    "url": "/vue-chat/_nuxt/9982277424ec91a7273c.js",
-    "revision": "633fd88bbdb8c1015540785dca9a3dbc"
+    "url": "/vue-chat/_nuxt/3dabc942a322f76e8b5c.js",
+    "revision": "f787918ce7795ba9bbd1589b2c310a4e"
   },
   {
-    "url": "/vue-chat/_nuxt/9d15ef281d6c9bf683d8.js",
-    "revision": "50fe53ebf6292f42e4ec1cb9c0102898"
+    "url": "/vue-chat/_nuxt/9982277424ec91a7273c.js",
+    "revision": "633fd88bbdb8c1015540785dca9a3dbc"
   },
   {
     "url": "/vue-chat/_nuxt/a9b658439c253eedaa99.js",
