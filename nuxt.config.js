@@ -4,6 +4,10 @@ const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 module.exports = {
   mode: 'universal',
 
+  target: 'static',
+  router: {
+    base: '/vue-chat/',
+  },
   /*
   ** Headers of the page
   */
